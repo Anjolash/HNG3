@@ -56,7 +56,7 @@ To run the ImageGallery project on your local machine, follow these steps:
 
 5. Open your web browser and access the application at [http://localhost:3000](http://localhost:3000).
 
-The link is also available at [GalleryApp ](https://spectacular-cassata-e0f519.netlify.app/landing)
+The link is also available at [GalleryApp ](https://spectacular-cassata-e0f519.netlify.app)
 ## Authentication
 
 ### Sign Up
