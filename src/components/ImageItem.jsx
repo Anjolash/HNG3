@@ -4,7 +4,7 @@ import { useAuth } from '../contexts/AuthContext';
 
 const ImageItem = ({ image, index, moveImage }) => {
   const { currentUser } = useAuth();
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const imageItemDiv = document.querySelector(`#image-item-${image.id}`);
@@ -15,7 +15,7 @@ const ImageItem = ({ image, index, moveImage }) => {
     }
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 6000);
   }, [currentUser, image.id]);
 
   const [, ref] = useDrag({
@@ -33,11 +33,9 @@ const ImageItem = ({ image, index, moveImage }) => {
     },
   });
 
-  console.log(`Image ${image.id} Loading: ${loading}`); 
-
   return (
     <figure id={`image-item-${image.id}`} ref={(node) => ref(drop(node))} className="image-item">
-      {loading ? ( 
+      {loading ? (
         <div className="image-item-skeleton">
           <div className="skeleton-image"></div>
         </div>

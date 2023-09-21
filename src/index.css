@@ -195,8 +195,17 @@ a{
   .containers{
       column-count: 2;
   }
+
+  
 }
 
+
+@media(max-width: 640px){
+  .intro input{
+    width: 100%;
+    max-width: 428px;
+  }  
+}
 
 @media(max-width: 480px){
   .containers{
