@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['react-router-dom', 'react-dnd', 'react-dnd-html5-backend'], // Specify multiple external modules with commas
+      external: [], // Specify multiple external modules with commas
     },
   },
 });
