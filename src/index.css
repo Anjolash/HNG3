@@ -211,4 +211,9 @@ a{
   .containers{
       column-count: 1;
   }
+
+  .intro p{
+    max-width: 100%;
+    word-wrap: break-word;
+  }
 }
